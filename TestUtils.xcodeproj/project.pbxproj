@@ -17,6 +17,9 @@
 		84C874D722A52BB20016C406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C874D522A52BB20016C406 /* LaunchScreen.storyboard */; };
 		84C874E222A52BB20016C406 /* ExaUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C874E122A52BB20016C406 /* ExaUtilsTests.swift */; };
 		84C874ED22A52BB30016C406 /* ExaUtilsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C874EC22A52BB30016C406 /* ExaUtilsUITests.swift */; };
+		84C874F922A534D70016C406 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C874F822A534D70016C406 /* CustomViewController.swift */; };
+		84C874FA22A534D70016C406 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C874F822A534D70016C406 /* CustomViewController.swift */; };
+		84C8750122A538380016C406 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C874FD22A536F60016C406 /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,8 @@
 		84C874E822A52BB20016C406 /* ExaUtilsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExaUtilsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C874EC22A52BB30016C406 /* ExaUtilsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExaUtilsUITests.swift; sourceTree = "<group>"; };
 		84C874EE22A52BB30016C406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C874F822A534D70016C406 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		84C874FD22A536F60016C406 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				84C874AF22A52AA60016C406 /* TestUtils.h */,
+				84C874F822A534D70016C406 /* CustomViewController.swift */,
+				84C874FD22A536F60016C406 /* SwiftyLib.swift */,
 				84C874B022A52AA60016C406 /* Info.plist */,
 			);
 			path = TestUtils;
@@ -293,6 +300,7 @@
 				TargetAttributes = {
 					84C874AB22A52AA60016C406 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					84C874B422A52AA60016C406 = {
 						CreatedOnToolsVersion = 10.1;
@@ -378,6 +386,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C874F922A534D70016C406 /* CustomViewController.swift in Sources */,
+				84C8750122A538380016C406 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C874FA22A534D70016C406 /* CustomViewController.swift in Sources */,
 				84C874CF22A52BB00016C406 /* ViewController.swift in Sources */,
 				84C874CD22A52BB00016C406 /* AppDelegate.swift in Sources */,
 			);
@@ -579,6 +590,7 @@
 		84C874C122A52AA60016C406 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -596,6 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nethues.TestUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -604,6 +617,7 @@
 		84C874C222A52AA60016C406 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -629,6 +643,7 @@
 		84C874C422A52AA60016C406 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TA69G4F749;
 				INFOPLIST_FILE = TestUtilsTests/Info.plist;
@@ -647,6 +662,7 @@
 		84C874C522A52AA60016C406 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TA69G4F749;
 				INFOPLIST_FILE = TestUtilsTests/Info.plist;
